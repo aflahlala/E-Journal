@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/birutua"
+    tools:context=".activity.AlertEjournal">
+
+    <Button
+        android:id="@+id/btbackal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/arrow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+    </Button>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/layer1"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/bglayeralert"
+                android:scaleType="fitStart">
+            </ImageView>
+
+            <ImageView
+                android:layout_below="@id/layer1"
+                android:id="@+id/vid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/layananpenting"
+                android:scaleType="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_below="@+id/vid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btig5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/igb"
+                    />
+                <Button
+                    android:id="@+id/btfb5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/fbb"
+                    />
+                <Button
+                    android:id="@+id/bttw5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="140dp"
+                    android:background="@drawable/twb"
+                    />
+
+                <Button
+                    android:id="@+id/btyt5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="210dp"
+                    android:background="@drawable/ytb" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

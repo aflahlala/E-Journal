@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="Beranda"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/panduan_menu"
+        android:title="Panduan"
+        android:icon="@drawable/ic_panduan"/>
+
+    <item
+        android:id="@+id/sipadu_menu"
+        android:title="Sipadu"
+        android:icon="@drawable/ic_sipadu"/>
+    <item
+        android:id="@+id/info_menu"
+        android:title="Informasi"
+        android:icon="@drawable/ic_informasi"/>
+    <item
+        android:id="@+id/translate_menu"
+        android:title="Penerjemah"
+        android:icon="@drawable/ic_translate"/>
+
+</menu>

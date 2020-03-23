@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.jplas.e_journal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Rating"></activity>
+        <activity android:name=".activity.AlertEjournal" />
+        <activity android:name=".activity.AlurAkses" />
+        <activity android:name=".activity.FragmentPanduan" />
+        <activity android:name=".activity.FragmentInformasi" />
+        <activity android:name=".activity.FragmentHome" />
+        <activity android:name=".activity.FragmentLayout" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/birutua"
+    tools:context=".activity.AlurAkses">
+
+    <Button
+        android:id="@+id/btbackalur"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/arrow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+    </Button>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/layer2"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/bglayeralur">
+            </ImageView>
+
+            <TextView
+                android:layout_below="@id/layer2"
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Langkah-Langkah Mengakses Layanan\nE-Journal Perpustakaan Universitas Negeri\n Malang"
+                android:textAlignment="center"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:fontFamily="@font/futura"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/alur"
+                android:layout_below="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/alur"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_below="@+id/alur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btig4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/igb"
+                    />
+                <Button
+                    android:id="@+id/btfb4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/fbb"
+                    />
+                <Button
+                    android:id="@+id/bttw4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="140dp"
+                    android:background="@drawable/twb"
+                    />
+
+                <Button
+                    android:id="@+id/btyt4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="210dp"
+                    android:background="@drawable/ytb" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
