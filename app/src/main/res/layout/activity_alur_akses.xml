@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/btbackalur"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
         android:background="@drawable/arrow"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp">
@@ -41,20 +41,23 @@
                 android:textAlignment="center"
                 android:textColor="@color/putih"
                 android:textSize="18sp"
-                android:fontFamily="@font/futura"
+                android:fontFamily="@font/madee"
                 android:textStyle="bold"
-                android:layout_centerHorizontal="true">
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
             </TextView>
 
             <ImageView
                 android:id="@+id/alur"
                 android:layout_below="@+id/judul"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="1000dp"
                 android:src="@drawable/alur"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:scaleType="fitStart">
             </ImageView>
 
             <RelativeLayout

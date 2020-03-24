@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">E-Journal</string>
+    <string name="informasi">E-JOURNAL user education merupakan produk skripsi berupa video pendidikan pemakai e-journal Perpustakaan Universitas Negeri Malang berbasis android dengan materi yang dijelaskan secara singkat dan menarik menggunakan video animasi motion graphic dengan durasi di bawah 2 menit.
+Produk skripsi ini dikembangkan oleh Chamdi Fajar (160214602629) dengan dosen pembimbing 1 yaitu Ibu Dr. Kusubakti Andajani, M.Pd., dosen pembimbing 2 yaitu Bapak Moh. Safii, S.Kom, M.Hum., serta validator produk yaitu Bapak M. Zainal Arifin, S.Si, M.Kom., Bapak Ali Mas’ud, S.Sos, MM., dan Bapak Ahmad Qorni N, S.Ptk.
+Video yang dibahas yaitu pentingnya layanan akses e-journal Perpustakaan UM, informasi layanan e-journal Perpustakaan UM, cara mengakses layanan e-journal Perpustakaan UM, dan teknik penelusuran atau pencarian di mesin pencari pada setiap provider e-jurnal langganan Perpustakaan UM.
+Semua video tersebut dapat diakses menggunakan gawai dimana saja dan kapan saja. Aplikasi ini membutuhkan koneksi jaringan internet untuk dapat memutar semua video yang disediakan.
+Fitur-fitur aplikasi E-JOURNAL user education:
+1)	Fitur Alur Mengakses
+Fitur ini dapat membantu kita dalam memahami bagaimana alur pengguna ketika akan mengakses layanan e-journal sampai menemukan artikel yang dibutuhkan.
+2) FITUR PENTINGNYA E-JOURNAL
+Fitur ini merupakan video yang menjelaskan tentang pentingnya pemanfaatan e-journal yang dilanggan Perpustakaan UM oleh civitas akademika UM dan manfaat yang dapat diperoleh setelah memanfaatkan layanan e-journal Perpustakaan Universitas Negeri Malang.
+3)	FITUR UTAMA APLIKASI
+Fitur utama aplikasi merupakan fitur yang terdiri dari 3 video antara lain video layanan e-journal Perpustakaan UM, video panduan akses layanan e-journal, dan video teknik penelusuran / pencarian.
+4)	MENU APLIKASI
+Menu aplikasi terdiri dari menu beranda, menu panduan, menu sipadu, menu informasi, dan menu penerjemah.
+Menu beranda merupakan menu yang menampilkan fitur alur mengakses, fitur pentingnya e-journal, dan fitur utama aplikasi.
+Menu panduan merupakan menu yang menampilkan buku panduan operasional aplikasi yang dapat diunduh untuk membantu pengguna dalam mempelajari aplikasi ini.
+Menu sipadu merupakan menu yang terhubung dengan laman sipadu UM untuk mengakses layanan e-journal Perpustakaan UM.
+Menu informasi merupakan menu yang menampilkan informasi tentang aplikasi (halaman ini), website Perpustakaan UM, bagikan aplikasi,  dan beri kami nilai.
+Menu penerjemah merupakan menu yang terhubung dengan laman google translate untuk menerjemahkan kata atau kalimat dari artikel jurnal yang berbahasa asing ke dalam Bahasa Indonesia untuk memudahkan memahami penjelasan di dalamnya.</string>
 </resources>

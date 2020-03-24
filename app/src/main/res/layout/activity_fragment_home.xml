@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -13,21 +12,34 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="30dp"
+                android:layout_marginTop="40dp"></RelativeLayout>
+
             <ImageView
-                android:id="@+id/lg1"
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg"
+                android:scaleType="fitStart"></ImageView>
+
+            <ImageView
+                android:id="@+id/lgsatuu"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:src="@drawable/logoputih"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginLeft="30dp" />
 
             <ImageView
-                android:id="@+id/lg2"
+                android:id="@+id/lgduaa"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:src="@drawable/logo_um"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="95dp" />
+                android:layout_marginLeft="100dp" />
 
             <TextView
                 android:id="@+id/tvhai"
@@ -37,10 +49,10 @@
                 android:textSize="20sp"
                 android:textColor="@color/putih"
                 android:textStyle="bold"
-                android:layout_marginLeft="290dp"
+                android:layout_marginLeft="300dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="40dp"
-                android:fontFamily="@font/futura"
+                android:fontFamily="@font/madee"
                 />
 
             <TextView
@@ -50,19 +62,18 @@
                 android:text="Selamat Datang !"
                 android:textSize="20sp"
                 android:textColor="@color/putih"
-                android:layout_marginLeft="180dp"
+                android:layout_marginLeft="200dp"
                 android:layout_marginTop="70dp"
-                android:fontFamily="@font/futura"
+                android:fontFamily="@font/madee"
                 />
 
             <LinearLayout
                 android:id="@+id/menunya"
-                android:layout_below="@id/tvselamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:baselineAligned="false"
                 android:orientation="horizontal"
-                android:layout_marginTop="70dp">
+                android:layout_marginTop="150dp">
 
                 <RelativeLayout
                     android:id="@+id/menu1"
@@ -110,23 +121,51 @@
                 android:layout_marginLeft="30dp"
                 android:textStyle="bold"
                 android:textColor="@color/hitam"
-                android:fontFamily="@font/futura"
+                android:fontFamily="@font/madee"
                 />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycle"
+            <ImageView
                 android:layout_below="@id/tvvv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                >
+                android:id="@+id/th1"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:background="@drawable/thumbnailsatu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitStart">
+            </ImageView>
 
-            </androidx.recyclerview.widget.RecyclerView>
+            <ImageView
+                android:layout_below="@id/th1"
+                android:id="@+id/th2"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:background="@drawable/thumbnailtiga"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitStart">
+            </ImageView>
 
+            <ImageView
+                android:layout_below="@id/th2"
+                android:id="@+id/th3"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:background="@drawable/thumbnaildua"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitStart">
+            </ImageView>
 
             <TextView
                 android:id="@+id/tvv"
-                android:layout_below="@id/recycle"
+                android:layout_below="@id/th3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Follow Media Social Perpustakaan UM untuk Update Informasi!"
@@ -136,7 +175,7 @@
                 android:layout_marginRight="30dp"
                 android:textStyle="bold"
                 android:textColor="@color/hitam"
-                android:fontFamily="@font/futura"
+                android:fontFamily="@font/madee"
                 />
 
             <RelativeLayout

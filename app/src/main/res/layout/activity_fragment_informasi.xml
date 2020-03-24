@@ -6,7 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".activity.FragmentInformasi">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tentang Kami"
+        android:textSize="20sp"
+        android:textColor="@color/putih"
+        android:fontFamily="@font/futura"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btbackinformasi"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:background="@drawable/arrow"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"></Button>
+
     <ScrollView
+        android:layout_below="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -30,14 +64,15 @@
                 android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
                 android:paddingLeft="15dp"
-                android:text="Informasi tentang aplikasi"
+                android:text="   Informasi tentang aplikasi"
                 android:textColor="@color/birumuda"
                 android:textAllCaps="false"
                 android:background="@drawable/btn_roundedtrans"
                 android:drawableLeft="@drawable/btsatu"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/futura"/>
+                android:fontFamily="@font/madee"
+                android:gravity="center_vertical"/>
 
             <Button
                 android:layout_below="@+id/bInformasi"
@@ -46,14 +81,15 @@
                 android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
                 android:paddingLeft="15dp"
-                android:text="Website Perpustakaan UM"
+                android:text="   Website Perpustakaan UM"
                 android:textColor="@color/birumuda"
                 android:textAllCaps="false"
                 android:background="@drawable/btn_roundedtrans"
                 android:drawableLeft="@drawable/btdua"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/futura"/>
+                android:fontFamily="@font/madee"
+                android:gravity="center_vertical"/>
 
             <Button
                 android:layout_below="@+id/bWeb"
@@ -69,7 +105,7 @@
                 android:drawableLeft="@drawable/bttiga"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/futura"
+                android:fontFamily="@font/madee"
                 android:gravity="center_vertical"/>
 
             <Button
@@ -86,7 +122,7 @@
                 android:drawableLeft="@drawable/btempat"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/futura"
+                android:fontFamily="@font/madee"
                 android:gravity="center_vertical"/>
 
             <RelativeLayout

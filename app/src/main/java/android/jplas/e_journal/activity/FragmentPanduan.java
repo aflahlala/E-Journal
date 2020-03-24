@@ -1,7 +1,10 @@
 package android.jplas.e_journal.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.jplas.e_journal.R;
@@ -17,8 +20,10 @@ public class FragmentPanduan extends Fragment {
 
     View view;
     ImageView img;
+    private Fragment fragment;
+    private FragmentManager fragmentManager;
 
-    Button ig2, fb2, yt2, tw2;
+    Button ig2, fb2, yt2, tw2, backpanduan;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
@@ -29,6 +34,18 @@ public class FragmentPanduan extends Fragment {
         fb2 = view.findViewById(R.id.btfb2);
         yt2 = view.findViewById(R.id.btyt2);
         tw2 = view.findViewById(R.id.bttw2);
+        backpanduan = view.findViewById(R.id.btbackpanduan);
+
+        backpanduan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentHome hm = new FragmentHome();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.main_container, hm);
+                ft.commit();
+            }
+        });
 
         img.setOnClickListener(new View.OnClickListener() {
             @Override

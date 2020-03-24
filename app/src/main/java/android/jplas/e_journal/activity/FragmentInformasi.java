@@ -2,6 +2,8 @@ package android.jplas.e_journal.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.jplas.e_journal.R;
@@ -15,7 +17,7 @@ import android.widget.Button;
 public class FragmentInformasi extends Fragment {
 
     View info;
-    Button infr, web, share, rate, ig3, fb3, yt3, tw3;
+    Button infr, web, share, rate, ig3, fb3, yt3, tw3, backinfo;
     // Method onCreateView dipanggil saat Fragment harus menampilkan layoutnya      // dengan membuat layout tersebut secara manual lewat objek View atau dengan     // membaca file XML
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
@@ -30,6 +32,26 @@ public class FragmentInformasi extends Fragment {
         fb3 = info.findViewById(R.id.btfb3);
         yt3 = info.findViewById(R.id.btyt3);
         tw3 = info.findViewById(R.id.bttw3);
+        backinfo = info.findViewById(R.id.btbackinformasi);
+
+        backinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentHome hm = new FragmentHome();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.main_container, hm);
+                ft.commit();
+            }
+        });
+
+        infr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), TentangAplikasi.class);
+                startActivity(i);
+            }
+        });
 
         web.setOnClickListener(new View.OnClickListener() {
             @Override

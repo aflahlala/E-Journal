@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/btbackal"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
         android:background="@drawable/arrow"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp">
@@ -36,11 +36,12 @@
                 android:layout_below="@id/layer1"
                 android:id="@+id/vid"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/layananpenting"
-                android:scaleType="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
+                android:layout_height="350dp"
+                android:src="@drawable/thumbnail"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
             </ImageView>
 
             <RelativeLayout

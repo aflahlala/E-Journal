@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class AlurAkses extends AppCompatActivity {
 
-    Button ig4, fb4, tw4, yt4;
+    Button ig4, fb4, tw4, yt4, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,15 @@ public class AlurAkses extends AppCompatActivity {
         fb4 = (Button) findViewById(R.id.btfb4);
         yt4 = (Button) findViewById(R.id.btyt4);
         tw4 = (Button) findViewById(R.id.bttw4);
+        back = (Button) findViewById(R.id.btbackalur);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(AlurAkses.this, FragmentLayout.class);
+                startActivity(i);
+            }
+        });
 
         ig4.setOnClickListener(new View.OnClickListener() {
             @Override

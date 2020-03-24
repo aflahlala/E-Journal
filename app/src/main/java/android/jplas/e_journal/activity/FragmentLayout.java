@@ -20,7 +20,6 @@ public class FragmentLayout extends AppCompatActivity {
     private BottomNavigationView bottomNavigation;
     private Fragment fragment;
     private FragmentManager fragmentManager;
-    private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +28,6 @@ public class FragmentLayout extends AppCompatActivity {
 
         bottomNavigation = (BottomNavigationView) findViewById(R.id.btn_nav);
         fragmentManager = getSupportFragmentManager();
-
-        toolbar = getSupportActionBar();
 
         //Untuk inisialisasi fragment pertama kali
         fragmentManager.beginTransaction().replace(R.id.main_container, new FragmentHome()).commit();
@@ -45,7 +42,6 @@ public class FragmentLayout extends AppCompatActivity {
                         fragment = new FragmentHome();
                         break;
                     case R.id.panduan_menu :
-                        toolbar.setTitle("Panduan Operasional Aplikasi");
                         fragment = new FragmentPanduan();
                         break;
                     case R.id.sipadu_menu:
@@ -55,7 +51,6 @@ public class FragmentLayout extends AppCompatActivity {
                         }
                         break;
                     case R.id.info_menu:
-                        toolbar.setTitle("Tentang Kami");
                         fragment = new FragmentInformasi();
                         break;
                     case R.id.translate_menu:

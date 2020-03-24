@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".activity.TentangAplikasi">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarpanduan"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -22,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Panduan Operasional Aplikasi"
+        android:text="Informasi Tentang Aplikasi"
         android:textSize="20sp"
         android:textColor="@color/putih"
         android:fontFamily="@font/futura"
@@ -31,7 +32,7 @@
         ></TextView>
 
     <Button
-        android:id="@+id/btbackpanduan"
+        android:id="@+id/btbackinfo"
         android:layout_width="25dp"
         android:layout_height="20dp"
         android:background="@drawable/arrow"
@@ -39,7 +40,7 @@
         android:layout_marginLeft="15dp"></Button>
 
     <ScrollView
-        android:layout_below="@+id/toolbarpanduan"
+        android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -48,43 +49,63 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/lgpanduan"
-                android:layout_width="wrap_content"
-                android:layout_height="520dp"
-                android:src="@drawable/bukupanduan"
+                android:id="@+id/imlogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo_aplikasi"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-
-                />
+                android:layout_marginTop="50dp"
+                ></ImageView>
 
             <RelativeLayout
-                android:layout_below="@+id/lgpanduan"
+                android:id="@+id/rel"
+                android:layout_below="@id/imlogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_biru">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/just"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/informasi"
+                    android:fontFamily="@font/madee"
+                    android:textColor="@color/putih">
+
+                </com.uncopt.android.widget.text.justify.JustifiedTextView>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_below="@+id/rel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="50dp">
 
                 <Button
-                    android:id="@+id/btig2"
+                    android:id="@+id/btig3"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/ig"
                     />
                 <Button
-                    android:id="@+id/btfb2"
+                    android:id="@+id/btfb3"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="70dp"
                     android:background="@drawable/fb"
                     />
                 <Button
-                    android:id="@+id/bttw2"
+                    android:id="@+id/bttw3"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="140dp"
@@ -92,7 +113,7 @@
                     />
 
                 <Button
-                    android:id="@+id/btyt2"
+                    android:id="@+id/btyt3"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="210dp"
@@ -100,12 +121,9 @@
 
             </RelativeLayout>
 
-
-
         </RelativeLayout>
+
+
     </ScrollView>
-
-
-
 
 </RelativeLayout>
