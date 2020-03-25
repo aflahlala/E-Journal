@@ -19,7 +19,6 @@ import com.uncopt.android.widget.text.justify.JustifiedTextView;
 public class TentangAplikasi extends AppCompatActivity {
 
     Button backsubinfo;
-    JustifiedTextView justifiedTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +26,6 @@ public class TentangAplikasi extends AppCompatActivity {
         setContentView(R.layout.activity_tentang_aplikasi);
 
         backsubinfo = (Button) findViewById(R.id.btbackinfo);
-        justifiedTextView = (JustifiedTextView) findViewById(R.id.just);
 
         backsubinfo.setOnClickListener(new View.OnClickListener() {
             @Override

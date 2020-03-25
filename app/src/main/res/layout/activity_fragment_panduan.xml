@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Panduan Operasional Aplikasi"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="@color/putih"
         android:fontFamily="@font/futura"
         android:layout_marginLeft="60dp"
@@ -50,11 +50,11 @@
             <ImageView
                 android:id="@+id/lgpanduan"
                 android:layout_width="wrap_content"
-                android:layout_height="520dp"
+                android:layout_height="500dp"
                 android:src="@drawable/bukupanduan"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:scaleType="fitXY"
+                android:scaleType="centerInside"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
 

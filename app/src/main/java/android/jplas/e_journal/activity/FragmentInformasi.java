@@ -18,10 +18,10 @@ public class FragmentInformasi extends Fragment {
 
     View info;
     Button infr, web, share, rate, ig3, fb3, yt3, tw3, backinfo;
-    // Method onCreateView dipanggil saat Fragment harus menampilkan layoutnya      // dengan membuat layout tersebut secara manual lewat objek View atau dengan     // membaca file XML
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
-        // Layout tampilan untuk fragment ini
+
         info = inflater.inflate(R.layout.activity_fragment_informasi, parent, false);
 
         infr = info.findViewById(R.id.bInformasi);

@@ -33,16 +33,15 @@
             </ImageView>
 
             <ImageView
-                android:layout_below="@id/layer1"
                 android:id="@+id/vid"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:src="@drawable/thumbnail"
-                android:scaleType="fitXY"
+                android:layout_height="265dp"
+                android:layout_below="@id/layer1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="20dp">
-            </ImageView>
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/thumbnail"></ImageView>
 
             <RelativeLayout
                 android:layout_below="@+id/vid"

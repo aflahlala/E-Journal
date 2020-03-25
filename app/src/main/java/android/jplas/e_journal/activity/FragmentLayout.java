@@ -29,10 +29,8 @@ public class FragmentLayout extends AppCompatActivity {
         bottomNavigation = (BottomNavigationView) findViewById(R.id.btn_nav);
         fragmentManager = getSupportFragmentManager();
 
-        //Untuk inisialisasi fragment pertama kali
         fragmentManager.beginTransaction().replace(R.id.main_container, new FragmentHome()).commit();
 
-        //Memberikan listener saat menu item di bottom navigation diklik
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
