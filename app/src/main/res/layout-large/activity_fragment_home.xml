@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:baselineAligned="false"
                 android:orientation="horizontal"
-                android:layout_marginTop="130dp">
+                android:layout_marginTop="150dp">
 
                 <RelativeLayout
                     android:id="@+id/menu1"
@@ -127,7 +127,7 @@
                 android:layout_below="@id/tvvv"
                 android:id="@+id/th1"
                 android:layout_width="wrap_content"
-                android:layout_height="315dp"
+                android:layout_height="355dp"
                 android:background="@drawable/thumbnailsatu"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
@@ -140,7 +140,7 @@
                 android:layout_below="@id/th1"
                 android:id="@+id/th2"
                 android:layout_width="wrap_content"
-                android:layout_height="295dp"
+                android:layout_height="320dp"
                 android:background="@drawable/thumbnailtiga"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
@@ -153,7 +153,7 @@
                 android:layout_below="@id/th2"
                 android:id="@+id/th3"
                 android:layout_width="wrap_content"
-                android:layout_height="320dp"
+                android:layout_height="355dp"
                 android:background="@drawable/thumbnaildua"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
@@ -162,22 +162,13 @@
                 android:scaleType="fitStart">
             </ImageView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:src="@drawable/footer"
-                android:layout_below="@id/th3"
-                android:scaleType="matrix"
-                android:layout_marginTop="40dp"
-                ></ImageView>
-
             <TextView
                 android:id="@+id/tvv"
                 android:layout_below="@id/th3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Follow Media Sosial Perpustakaan UM Untuk Update Informasi"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:textSize="18sp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
@@ -193,27 +184,28 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp">
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="50dp">
 
                 <Button
                     android:id="@+id/btig"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/igb"
+                    android:background="@drawable/ig"
                     />
                 <Button
                     android:id="@+id/btfb"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="70dp"
-                    android:background="@drawable/fbb"
+                    android:background="@drawable/fb"
                     />
                 <Button
                     android:id="@+id/bttw"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="140dp"
-                    android:background="@drawable/twb"
+                    android:background="@drawable/tw"
                     />
 
                 <Button
@@ -221,7 +213,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="210dp"
-                    android:background="@drawable/ytb" />
+                    android:background="@drawable/yt" />
 
             </RelativeLayout>
 

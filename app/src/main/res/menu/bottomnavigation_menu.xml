@@ -5,25 +5,30 @@
 
     <item
         android:id="@+id/home_menu"
+        android:icon="@drawable/ic_home"
         android:title="Beranda"
-        android:icon="@drawable/ic_home"/>
+        />
 
     <item
         android:id="@+id/panduan_menu"
+        android:icon="@drawable/ic_panduan"
         android:title="Panduan"
-        android:icon="@drawable/ic_panduan"/>
+        />
 
     <item
         android:id="@+id/sipadu_menu"
+        android:icon="@drawable/ic_sipadu"
         android:title="Sipadu"
-        android:icon="@drawable/ic_sipadu"/>
+        />
     <item
         android:id="@+id/info_menu"
+        android:icon="@drawable/ic_informasi"
         android:title="Informasi"
-        android:icon="@drawable/ic_informasi"/>
+        />
     <item
         android:id="@+id/translate_menu"
+        android:icon="@drawable/ic_translate"
         android:title="Penerjemah"
-        android:icon="@drawable/ic_translate"/>
+        />
 
 </menu>

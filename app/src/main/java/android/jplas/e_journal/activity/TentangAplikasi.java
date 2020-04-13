@@ -14,8 +14,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.uncopt.android.widget.text.justify.JustifiedTextView;
-
 public class TentangAplikasi extends AppCompatActivity {
 
     Button backsubinfo;

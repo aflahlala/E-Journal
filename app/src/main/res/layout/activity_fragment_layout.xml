@@ -25,6 +25,7 @@
             app:itemTextColor="@drawable/state_bnve"
             android:textAlignment="center"
             app:itemIconSize="25dp"
+            app:labelVisibilityMode="labeled"
             >
 
         <View

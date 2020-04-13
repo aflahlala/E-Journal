@@ -79,10 +79,10 @@ public class FragmentHome extends Fragment {
         th2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                try {
-//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=pXytTzm8apE")));
-//                } catch (Exception e) {
-//                }
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/wDp7JJ0k0dY")));
+                } catch (Exception e) {
+                }
             }
         });
 

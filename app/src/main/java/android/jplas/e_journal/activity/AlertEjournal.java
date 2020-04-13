@@ -32,7 +32,7 @@ public class AlertEjournal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/perpustakaan.um/")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/tfKqLGNVOvA")));
                 } catch (Exception e) {
                 }
             }

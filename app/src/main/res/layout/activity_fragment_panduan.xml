@@ -41,7 +41,7 @@
     <ScrollView
         android:layout_below="@+id/toolbarpanduan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -57,38 +57,45 @@
                 android:scaleType="centerInside"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-
                 />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/footer"
+                android:layout_below="@id/lgpanduan"
+                android:scaleType="matrix"
+                android:layout_marginTop="40dp"
+                ></ImageView>
 
             <RelativeLayout
                 android:layout_below="@+id/lgpanduan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="50dp">
+                android:layout_marginRight="30dp">
 
                 <Button
                     android:id="@+id/btig2"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/ig"
+                    android:background="@drawable/igb"
                     />
                 <Button
                     android:id="@+id/btfb2"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="70dp"
-                    android:background="@drawable/fb"
+                    android:background="@drawable/fbb"
                     />
                 <Button
                     android:id="@+id/bttw2"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="140dp"
-                    android:background="@drawable/tw"
+                    android:background="@drawable/twb"
                     />
 
                 <Button
@@ -96,7 +103,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="210dp"
-                    android:background="@drawable/yt" />
+                    android:background="@drawable/ytb" />
 
             </RelativeLayout>
 

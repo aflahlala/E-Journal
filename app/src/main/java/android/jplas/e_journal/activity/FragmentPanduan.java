@@ -1,7 +1,5 @@
 package android.jplas.e_journal.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -50,10 +48,8 @@ public class FragmentPanduan extends Fragment {
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1eGxXeENmlT51cmfiw0GKUMATocUUUJBn/view")));
-                } catch (Exception e) {
-                }
+                Intent i = new Intent(getActivity(), FragmentPanduanDua.class);
+                startActivity(i);
             }
         });
 
